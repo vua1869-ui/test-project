@@ -1,0 +1,16 @@
+[
+    {
+        "id": "LT01",
+        "name": "iphone 14",
+        "brand": "huy linh mobile",
+        "price": 9500000,
+        "quantity": 1
+    },
+    {
+        "id": "LT02",
+        "name": "samsung A12",
+        "brand": "free",
+        "price": 4500000,
+        "quantity": 1
+    }
+]
