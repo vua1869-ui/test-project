@@ -12,5 +12,10 @@
         "brand": "free",
         "price": 4500000,
         "quantity": 1
+    },
+    {
+        "name": "ip11",
+        "price": 5000000.0,
+        "quantity": 1
     }
 ]
