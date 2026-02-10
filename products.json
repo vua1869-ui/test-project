@@ -1,21 +1,30 @@
 [
     {
         "id": "LT01",
-        "name": "iphone 14",
-        "brand": "huy linh mobile",
+        "name": "ip14",
+        "brand": "hahaha",
         "price": 9500000,
-        "quantity": 1
+        "quantity": 2
     },
     {
         "id": "LT02",
-        "name": "samsung A12",
-        "brand": "free",
-        "price": 4500000,
+        "name": "laptop1",
+        "brand": "lenovo",
+        "price": 18000000,
         "quantity": 1
     },
     {
-        "name": "ip11",
-        "price": 5000000.0,
+        "id": "LT03",
+        "name": "laptop2",
+        "brand": "windonw",
+        "price": 19000000,
+        "quantity": 1
+    },
+    {
+        "id": "LT04",
+        "name": "laptop3",
+        "brand": "win",
+        "price": 20000000,
         "quantity": 1
     }
 ]
