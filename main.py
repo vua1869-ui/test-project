@@ -9,6 +9,7 @@ Chức năng:
 from product_manager import *
 
 def menu():
+    print("@@@@@@@")
     print("\n====== POLY-LAP MANAGER ======")
     print("1. Hiển thị sản phẩm")
     print("2. Thêm sản phẩm")
