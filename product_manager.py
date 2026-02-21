@@ -19,17 +19,17 @@ def load_data():
     except FileNotFoundError:
         return []
 
-def save_data(products):
+def save_data(products):#hàm  lưu dữ liệu vào file
     """Lưu danh sách sản phẩm vào file JSON"""
     with open(FILE_NAME, "w", encoding="utf-8") as f:
         json.dump(products, f, indent=4, ensure_ascii=False)
 
 # ------------------ CORE ------------------
-def generate_id(products):
+def generate_id(products): # hàm tạo mã sản phẩm tự động
     """Tự động tạo mã sản phẩm"""
     return f"LT{len(products) + 1:02d}"
 
-def add_product(products):
+def add_product(products): # hàm thêm sản phẩm 
     print("\n➕ THÊM SẢN PHẨM")
     name = input("Tên sản phẩm: ")
     brand = input("Thương hiệu: ")
@@ -48,7 +48,7 @@ def add_product(products):
     print("✅ Thêm thành công!")
     return products
 
-def update_product(products):
+def update_product(products):# hàm sửa sản phẩm
     print("\n✏️ CẬP NHẬT SẢN PHẨM")
     pid = input("Nhập mã sản phẩm: ")
 
@@ -72,7 +72,7 @@ def update_product(products):
     print("❌ Không tìm thấy sản phẩm!")
     return products
 
-def delete_product(products):
+def delete_product(products): # hàm xóa sản phẩm
     print("\n🗑️ XÓA SẢN PHẨM")
     pid = input("Nhập mã sản phẩm: ")
 
@@ -85,7 +85,7 @@ def delete_product(products):
     print("❌ Không tìm thấy sản phẩm!")
     return products
 
-def search_product_by_name(products):
+def search_product_by_name(products): # hàm tìm kiếm sản phẩm
     print("\n🔍 TÌM KIẾM")
     keyword = input("Nhập từ khóa: ").lower()
 
@@ -98,7 +98,7 @@ def search_product_by_name(products):
     if not found:
         print("❌ Không tìm thấy sản phẩm!")
 
-def display_all_products(products):
+def display_all_products(products): # hàm hiển thị tất cả sản phẩm
     print("\n📦 DANH SÁCH SẢN PHẨM")
     if not products:
         print("Kho hàng trống.")
